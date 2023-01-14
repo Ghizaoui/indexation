@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>werkzeug.routing.exceptions.BuildError: Could not build url for endpoint '/test'. Did you mean 'test' instead?
+ // Werkzeug Debugger</title>
+    <link rel="stylesheet" href="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/style.css">
+    <link rel="shortcut icon" href="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png">
+    <script src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/debugger.js.téléchargement"></script>
+    <script>
+      var CONSOLE_MODE = false,
+          EVALEX = true,
+          EVALEX_TRUSTED = false,
+          SECRET = "1V6mZoVebkJRX37mGYin";
+    </script>
+  </head>
+  <body style="background-color: #fff">
+    <div class="debugger">
+<h1>BuildError</h1>
+<div class="detail">
+  <p class="errormsg">werkzeug.routing.exceptions.BuildError: Could not build url for endpoint '/test'. Did you mean 'test' instead?
+</p>
+</div>
+<h2 class="traceback" style="cursor: pointer;">Traceback <em>(most recent call last)</em></h2>
+<div class="traceback">
+  <h3></h3>
+  <ul><li><div class="frame" id="frame-1964804662992">
+  <h4>File <cite class="filename">"C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">2548</em>,
+      in <code class="function">__call__</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">    </span>def __call__(self, environ: dict, start_response: t.Callable) -&gt; t.Any:<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>"""The WSGI server calls the Flask application object as the<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>WSGI application. This calls :meth:`wsgi_app`, which can be<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>wrapped to apply middleware.<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>"""<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">        </span>return self.wsgi_app(environ, start_response)<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1964804663104">
+  <h4>File <cite class="filename">"C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">2528</em>,
+      in <code class="function">wsgi_app</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">            </span>try:<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                </span>ctx.push()<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                </span>response = self.full_dispatch_request()<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>except Exception as e:<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                </span>error = e<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">                </span>response = self.handle_exception(e)<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>except:  # noqa: B001<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>error = sys.exc_info()[1]<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>raise<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>return response(environ, start_response)<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>finally:<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1964804663216">
+  <h4>File <cite class="filename">"C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">2525</em>,
+      in <code class="function">wsgi_app</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span>ctx = self.request_context(environ)<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>error: t.Optional[BaseException] = None<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>try:<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>try:<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                </span>ctx.push()<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">                </span>response = self.full_dispatch_request()<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>except Exception as e:<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>error = e<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>response = self.handle_exception(e)<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>except:  # noqa: B001<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>error = sys.exc_info()[1]<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1964804663328">
+  <h4>File <cite class="filename">"C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">1822</em>,
+      in <code class="function">full_dispatch_request</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">            </span>request_started.send(self)<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>rv = self.preprocess_request()<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>if rv is None:<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                </span>rv = self.dispatch_request()<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>except Exception as e:<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">            </span>rv = self.handle_user_exception(e)<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>return self.finalize_request(rv)<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>def finalize_request(<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>self,<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>rv: t.Union[ft.ResponseReturnValue, HTTPException],<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1964804663440">
+  <h4>File <cite class="filename">"C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">1820</em>,
+      in <code class="function">full_dispatch_request</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws"></span> <img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>try:<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>request_started.send(self)<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>rv = self.preprocess_request()<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>if rv is None:<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">                </span>rv = self.dispatch_request()<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>except Exception as e:<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>rv = self.handle_user_exception(e)<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>return self.finalize_request(rv)<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>def finalize_request(<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1964804663552">
+  <h4>File <cite class="filename">"C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">1796</em>,
+      in <code class="function">dispatch_request</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">            </span>and req.method == "OPTIONS"<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>):<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>return self.make_default_options_response()<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span># otherwise dispatch to the handler for that endpoint<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>view_args: t.Dict[str, t.Any] = req.view_args  # type: ignore[assignment]<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">        </span>return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>def full_dispatch_request(self) -&gt; Response:<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>"""Dispatches the request and on top of that performs request<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>pre and postprocessing as well as HTTP exception catching and<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>error handling.<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1964804663664">
+  <h4>File <cite class="filename">"C:\Users\user\Desktop\hna\index.py"</cite>,
+      line <em class="line">11</em>,
+      in <code class="function">home</code></h4>
+  <div class="source "><pre class="line before"><span class="ws"></span>from algo import predict, predictH<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span>app = Flask(__name__)<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span>import os<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span>@app.route('/')<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span>def home():<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">    </span>return render_template('prediction.html')<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span>@app.route('/pred',methods = ['POST', 'GET'])<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span>def analysis():<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>if request.method == 'POST':<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">         </span>image = request.files['myfile']<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1964804663776">
+  <h4>File <cite class="filename">"C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\templating.py"</cite>,
+      line <em class="line">147</em>,
+      in <code class="function">render_template</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span>a list is given, the first name to exist will be rendered.<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>:param context: The variables to make available in the template.<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>"""<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>app = current_app._get_current_object()  # type: ignore[attr-defined]<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>template = app.jinja_env.get_or_select_template(template_name_or_list)<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">    </span>return _render(app, template, context)<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span>def render_template_string(source: str, **context: t.Any) -&gt; str:<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>"""Render a template from the given source string with the given<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>context.<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1964804663888">
+  <h4>File <cite class="filename">"C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\templating.py"</cite>,
+      line <em class="line">130</em>,
+      in <code class="function">_render</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws"></span> <img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span> <img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span>def _render(app: "Flask", template: Template, context: t.Dict[str, t.Any]) -&gt; str:<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>app.update_template_context(context)<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>before_render_template.send(app, template=template, context=context)<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">    </span>rv = template.render(context)<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>template_rendered.send(app, template=template, context=context)<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>return rv<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span>def render_template(<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1964804664000">
+  <h4>File <cite class="filename">"C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\jinja2\environment.py"</cite>,
+      line <em class="line">1291</em>,
+      in <code class="function">render</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span>ctx = self.new_context(dict(*args, **kwargs))<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span> <img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>try:<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>return concat(self.root_render_func(ctx))  # type: ignore<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>except Exception:<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">            </span>self.environment.handle_exception()<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>async def render_async(self, *args: t.Any, **kwargs: t.Any) -&gt; str:<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>"""This works similar to :meth:`render` but returns a coroutine<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>that when awaited returns the entire rendered template string.  This<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>requires the async feature to be enabled.<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1964804664112">
+  <h4>File <cite class="filename">"C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\jinja2\environment.py"</cite>,
+      line <em class="line">925</em>,
+      in <code class="function">handle_exception</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span>"""Exception handling helper.  This is used internally to either raise<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>rewritten exceptions or return a rendered traceback for the template.<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>"""<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>from .debug import rewrite_traceback_stack<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span> <img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">        </span>raise rewrite_traceback_stack(source=source)<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>def join_path(self, template: str, parent: str) -&gt; str:<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>"""Join a template with the parent.  By default all the lookups are<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>relative to the loader root so this method returns the `template`<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>parameter unchanged, but if the paths should be relative to the<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1964804664224">
+  <h4>File <cite class="filename">"C:\Users\user\Desktop\hna\templates\prediction.html"</cite>,
+      line <em class="line">18</em>,
+      in <code class="function">top-level template code</code></h4>
+  <div class="source "><pre class="line before"><span class="ws"></span>&lt;body&gt;<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span>&lt;script&gt;<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>function changeaction(el) {<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>var form = document.getElementById("myform");<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>if (el.id === "dc") {<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">            </span>form.action = "{{ url_for('/test') }}";<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>} else if (el.id === "dt") {<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>form.action = "{{ url_for('/pred') }}";<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>}<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>}<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span>&lt;/script&gt;<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1964804762304">
+  <h4>File <cite class="filename">"C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">2031</em>,
+      in <code class="function">url_for</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">            </span>)<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>except BuildError as error:<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>values.update(<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                </span>_anchor=_anchor, _method=_method, _scheme=_scheme, _external=_external<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>)<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">            </span>return self.handle_url_build_error(error, endpoint, values)<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>if _anchor is not None:<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>rv = f"{rv}#{url_quote(_anchor)}"<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>return rv<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1964804762528">
+  <h4>File <cite class="filename">"C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">2020</em>,
+      in <code class="function">url_for</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">            </span>raise ValueError("When specifying '_scheme', '_external' must be True.")<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span> <img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>self.inject_url_defaults(endpoint, values)<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span> <img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>try:<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">            </span>rv = url_adapter.build(  # type: ignore[union-attr]<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>endpoint,<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>values,<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>method=_method,<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>url_scheme=_scheme,<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>force_external=_external,<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1964804762752">
+  <h4>File <cite class="filename">"C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing\map.py"</cite>,
+      line <em class="line">917</em>,
+      in <code class="function">build</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span>else:<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>values = {}<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span> <img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>rv = self._partial_build(endpoint, values, method, append_unknown)<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>if rv is None:<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">            </span>raise BuildError(endpoint, values, method, self)<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>domain_part, path, websocket = rv<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>host = self.get_host(domain_part)<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>if url_scheme is None:<img src="./werkzeug.routing.exceptions.BuildError_ Could not build url for endpoint &#39;_test&#39;. Did you mean &#39;test&#39; instead_ __ Werkzeug Debugger_files/console.png" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+</li></ul>
+  <blockquote>werkzeug.routing.exceptions.BuildError: Could not build url for endpoint '/test'. Did you mean 'test' instead?
+</blockquote>
+</div>
+
+<div class="plain hidden">
+    <p>
+      This is the Copy/Paste friendly version of the traceback.
+    </p>
+    <pre>Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\user\Desktop\hna\index.py", line 11, in home
+    return render_template('prediction.html')
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\user\Desktop\hna\templates\prediction.html", line 18, in top-level template code
+    form.action = "{{ url_for('/test') }}";
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "C:\Users\user\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\routing\map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint '/test'. Did you mean 'test' instead?
+</pre>
+</div>
+<div class="explanation">
+  The debugger caught an exception in your WSGI application.  You can now
+  look at the traceback which led to the error.  <span class=""><p>To switch between the interactive traceback and the plaintext one, you can click on the "Traceback" headline. From the text traceback you can also create a paste of it. For code execution mouse-over the frame you want to debug and click on the console icon on the right side.</p><p>You can execute arbitrary Python code in the stack frames and there are some extra helpers available for introspection:</p><ul><li><code>dump()</code> shows all variables in the frame</li><li><code>dump(obj)</code> dumps all that's known about the object</li></ul></span>
+</div>
+      <div class="footer">
+        Brought to you by <strong class="arthur">DON'T PANIC</strong>, your
+        friendly Werkzeug powered traceback interpreter.
+      </div>
+    </div>
+
+    <div class="pin-prompt">
+      <div class="inner">
+        <h3>Console Locked</h3>
+        <p>
+          The console is locked and needs to be unlocked by entering the PIN.
+          You can find the PIN printed out on the standard output of your
+          shell that runs the server.
+        </p><form>
+          <p>PIN:
+            <input type="text" name="pin" size="14">
+            <input type="submit" name="btn" value="Confirm Pin">
+        </p></form>
+      </div>
+    </div>
+  
+
+
+
+</body></html>

@@ -1,0 +1,233 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 1.6rem;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+input:focus {
+  border: 0;
+  outline: 0;
+}
+
+button {
+  border: 0;
+  outline: 0;
+  color: #222;
+  background: #fff;
+}
+
+img {
+  display: block;
+}
+
+/* @NAVIGATION */
+#google-nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.6rem;
+  font-size: 1.3rem;
+}
+
+#google-nav .nav-list {
+  display: flex;
+  align-items: center;
+  padding-left: 3.2rem;
+}
+
+#google-nav .nav-item {
+  display: inline-block;
+}
+
+#google-nav .nav-item:first-child,
+#google-nav .nav-item:nth-child(2) {
+  padding-right: 1.5rem;
+}
+
+#google-nav .nav-item:first-child:hover,
+#google-nav .nav-item:nth-child(2):hover {
+  text-decoration: underline;
+}
+
+#google-nav .nav-item:nth-child(3),
+#google-nav .nav-item:last-child {
+  padding: 0.4rem;
+}
+
+#google-nav .nav-item .nav-apps {
+  padding: 0.8rem;
+  color: #5f6368;
+  border-radius: 100%;
+}
+
+#google-nav .nav-item .nav-icon {
+  padding: 0.4rem;
+  border-radius: 100%;
+}
+
+#google-nav .nav-item .nav-apps:hover,
+#google-nav .nav-item .nav-icon:hover {
+  background: rgba(60, 64, 67, 0.08);
+}
+
+/* @MAIN */
+#google-main {
+  height: 75.9vh;
+  width: 100%;
+}
+
+#google-main .main-logo {
+  position: relative;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#google-main .main-form {
+  max-width: 584px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+#google-main .main-form > *:not(:last-child) {
+  margin-bottom: 1.8rem;
+}
+
+#google-main .main-search {
+  display: flex;
+  align-items: center;
+  height: 44px;
+  border: 1px solid #dfe1e5;
+  padding: 0.5rem 0.8rem 0 1.6rem;
+  box-shadow: none;
+  border-radius: 2.4rem;
+  z-index: 3;
+}
+
+#google-main .main-search:hover {
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+#google-main .main-form .main-search > *:first-child,
+#google-main .main-form .main-search > *:last-child {
+  color: #9aa0a6;
+}
+
+#google-main .main-form .main-search > *:first-child {
+  margin-right: 1.3rem;
+  font-size: 2rem;
+}
+
+#google-main .main-form .main-search .main-input {
+  flex: 1;
+}
+
+#google-main .main-form .main-search > *:last-child {
+  padding: 0.8rem;
+}
+
+#google-main .main-form .main-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+#google-main .main-form .main-buttons .main-btn {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+#google-main .main-form .main-buttons .main-btn:hover {
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
+}
+#google-main .main-form .main-buttons .main-btn:focus {
+  border: 1px solid #4d90fe;
+  outline: none;
+}
+
+/* @FOOTER */
+#google-footer {
+  background: #f2f2f2;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 1.5rem;
+}
+
+#google-footer .footer-country {
+  padding: 1.5rem 3rem;
+  border-bottom: 1px solid #dadce0;
+}
+
+#google-footer .footer-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+#google-footer .footer-links .footer-list-1,
+#google-footer .footer-links .footer-list-2 {
+  display: flex;
+}
+
+#google-footer .footer-links .footer-item {
+  font-size: 1.4rem;
+  padding: 1.5rem;
+}
+
+#google-footer .footer-links .footer-item:hover {
+  text-decoration: underline;
+}
+
+/* @MEDIA QUERY */
+@media only screen and (max-width: 42.5em) {
+  html {
+    font-size: 57.75%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  #google-footer .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #google-footer .footer-links .footer-list-1 {
+    display: none;
+  }
+}

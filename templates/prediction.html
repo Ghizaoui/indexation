@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Odin Project: Google homepage</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+<body>
+<script>
+    function changeaction(el) {
+        var form = document.getElementById("myform");
+        if (el.id === "dc") {
+            form.action = "{{ url_for('test') }}";
+        } else if (el.id === "dt") {
+            form.action = "{{ url_for('analysis') }}";
+        }
+		else if (el.id === "dm") {
+            form.action = "{{ url_for('merge') }}";
+        }
+    }
+</script>
+  <nav id="google-nav">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="#" class="nav-link">Gmail</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Images</a></li>
+      <li class="nav-item"><a href="#" class="nav-link"><span class="material-icons nav-apps">apps</span></a></li>
+      <li class="nav-item"><a href="#" class="nav-link"><img src="https://i.postimg.cc/HxBq206C/undercover1.jpg" alt="User icon" class="nav-icon"></a></li>
+    </ul>
+  </nav>
+
+  <main id="google-main">
+   <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" class="main-logo">
+    <form action="{{url_for('analysis')}}" method="post" class="main-form" id="myform" enctype="multipart/form-data">
+      <div class="main-search">
+        <span class="material-icons">search</span>
+        <input type="file" name="myfile" id="myfile" class="main-input">
+        <span class="material-icons">mic</span>
+      </div>
+      <div class="main-buttons">
+      <button id="dc" type="submit" class="main-btn" onclick="changeaction(this)" value=test>Search by color</button>
+      <button id="dt" type="submit" class="main-btn" onclick="changeaction(this)" value=pred>Search by texture </button>
+	  <button id="dm" type="submit" class="main-btn" onclick="changeaction(this)" value=dm>Search by merge </button>
+      </div>
+    </form>
+  </main>
+
+  <footer id="google-footer">
+    <p class="footer-country">Earth</p>
+    <div class="footer-links">
+      <ul class="footer-list-1">
+        <li class="footer-item"><a href="#">About</a></li>
+        <li class="footer-item"><a href="#">Advertising</a></li>
+        <li class="footer-item"><a href="#">Business</a></li>
+        <li class="footer-item"><a href="#">How Search works</a></li>
+      </ul>
+      <ul class="footer-list-2">
+        <li class="footer-item"><a href="#">Privacy</a></li>
+        <li class="footer-item"><a href="#">Terms</a></li>
+        <li class="footer-item"><a href="#">Settings</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+<!-- </html> -->
